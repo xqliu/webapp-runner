@@ -19,6 +19,8 @@ If you want to install a version <= `8.5.47.2` you must use the old group id.
     git clone https://github.com/heroku/webapp-runner.git
     mvn package
 
+Find fileCopy path
+
 ### Execute
 
     java -jar target/webapp-runner.jar path/to/my/project
@@ -58,7 +60,7 @@ Add the following to your pom.xml:
                           <artifactItem>
                               <groupId>com.heroku</groupId>
                               <artifactId>webapp-runner</artifactId>
-                              <version>${webapp-runner.version</version>
+                              <version>${webapp-runner.version}</version>
                               <destFileName>webapp-runner.jar</destFileName>
                           </artifactItem>
                       </artifactItems>
@@ -84,7 +86,7 @@ You can exclude them by using `webapp-runner-main`:
 <dependency>
   <groupId>com.heroku</groupId>
   <artifactId>webapp-runner-main</artifactId>
-  <version>${webapp-runner.version</version>
+  <version>${webapp-runner.version}</version>
 </dependency>
 ```
 
